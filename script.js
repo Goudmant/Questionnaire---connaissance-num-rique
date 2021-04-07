@@ -7,22 +7,22 @@ const formBtn3 = document.querySelector("#btn-3")
 formBtn1.addEventListener("click", function(e) {
     gotoNextForm(formBtn1, formBtnNext2, 1, 2)
     e.preventDefault()
-  })
+})
   
-  // Next button listener of form 2
-  formBtnNext2.addEventListener("click", function(e) {
+// Next button listener of form 2
+formBtnNext2.addEventListener("click", function(e) {
     gotoNextForm(formBtnNext2, formBtn3, 2, 3)
     e.preventDefault()
-  })
+})
   
-  // Previous button listener of form 2
-  formBtnPrev2.addEventListener("click", function(e) {
+// Previous button listener of form 2
+formBtnPrev2.addEventListener("click", function(e) {
     gotoNextForm(formBtnNext2, formBtn1, 2, 1)
     e.preventDefault()
-  })
+})
   
-  // Button listener of form 3
-  formBtn3.addEventListener("click", function(e) {
+// Button listener of form 3
+formBtn3.addEventListener("click", function(e) {
     document.querySelector(`.step--3`).classList.remove("step-active")
     document.querySelector(`.step--4`).classList.add("step-active")
     formBtn3.parentElement.style.display = "none"
@@ -30,9 +30,9 @@ formBtn1.addEventListener("click", function(e) {
      <h1 class="form--message-text">Your account is successfully created </h1>
      `
     e.preventDefault()
-  })
+})
 
-  const gotoNextForm = (prev, next, stepPrev, stepNext) => {
+    const gotoNextForm = (prev, next, stepPrev, stepNext) => {
     // Get form through the button
     const prevForm = prev.parentElement
     const nextForm = next.parentElement
@@ -51,6 +51,5 @@ formBtn1.addEventListener("click", function(e) {
       prevForm.classList.remove("form-inactive")
       nextForm.classList.remove("form-active-animate")
     }, 1000)
-  }
+}
 
-  

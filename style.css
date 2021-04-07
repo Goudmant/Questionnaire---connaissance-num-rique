@@ -7,7 +7,10 @@
 }
 
 body {
-  background: #f5f6f7;
+  background-color: #f5f6f7;
+  background-image: url(./assets/pexels-energepiccom-313691.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Nunito", sans-serif;
 }
 
@@ -52,14 +55,14 @@ main {
   width: 5rem;
   padding: 0.5rem 0;
   background: #fff;
-  color: #666;
+  color: #6001F5;
   text-align: center;
 }
 
 .step--1,
 .step--2,
 .step--3 {
-  border-right: 1px solid #666;
+  border-right: 1px solid #6001F5;
 }
 
 .form {
@@ -75,8 +78,8 @@ main {
 }
 
 .form--header-container {
-  background: -webkit-gradient(linear, left top, right top, from(#333333), to(#919191));
-  background: linear-gradient(to right, #333333, #919191);
+  background: -webkit-gradient(linear, left top, right top, from(#F5BD0C), to(#ffffff));
+  background: linear-gradient(to right, #F5BD0C, #ffffff);
   color: #fff;
   height: 6rem;
   padding: 1rem 0;
@@ -103,7 +106,7 @@ input[type="text"] {
 }
 
 .form__btn {
-  background: #333;
+  background: #F5BD0C;
   color: #fff;
   outline: none;
   border: none;
@@ -119,7 +122,7 @@ input[type="text"] {
 .form--message-text {
   width: 25rem;
   background: #fff;
-  color: #444;
+  color: #F5BD0C;
   padding: 2rem 1rem;
   text-align: center;
   font-size: 1.4rem;
@@ -147,9 +150,9 @@ input[type="text"] {
 }
 
 .step-active {
-  background: #666;
+  background: #6001F5;
   color: #fff;
-  border: 1px solid #666;
+  border: 1px solid #6001F5;
 }
 
 @-webkit-keyframes moveRight {
