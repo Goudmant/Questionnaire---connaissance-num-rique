@@ -34,7 +34,8 @@ main {
   .step--1,
   .step--2,
   .step--3,
-  .step--4 {
+  .step--4,
+  .step--5 {
     width: 5rem;
     padding: 0.5rem 0;
     background: #fff;
@@ -43,7 +44,8 @@ main {
   }
   .step--1,
   .step--2,
-  .step--3 {
+  .step--3,
+  .step--4 {
     border-right: 1px solid #6001F5;
   }
 
@@ -58,7 +60,7 @@ main {
     overflow: hidden;
   }
   .form--header-container {
-    background: linear-gradient(to right, #F5BD0C, #ffffff);
+    background: linear-gradient(to right, #F5BD0C, #6001F5);
     color: #fff;
     height: 6rem;
     padding: 1rem 0;

@@ -27,7 +27,7 @@ formBtn3.addEventListener("click", function(e) {
     document.querySelector(`.step--4`).classList.add("step-active")
     formBtn3.parentElement.style.display = "none"
     document.querySelector(".form--message").innerHTML = `
-     <h1 class="form--message-text">Your account is successfully created </h1>
+     <h1 class="form--message-text">Super vous avez fini le questionnaire!</h1>
      `
     e.preventDefault()
 })

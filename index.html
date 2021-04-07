@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./script.js">
+    <script src="./script.js"defer></script>
 
     <title>Questionnaire de connaissances numériques</title>
 
@@ -14,59 +14,87 @@
 <body>
         <main>
             <div class="stepper">
-            <div class="step--1 step-active">Étape 1</div>
-            <div class="step--2">Étape 2</div>
-            <div class="step--3">Étape 3</div>
-            <div class="step--4">Fin</div>
+            <div class="step--1 step-active">Début</div>
+            <div class="step--2">Étape 1</div>
+            <div class="step--3">Étape 2</div>
+            <div class="step--4">Étape 3</div>
+            <div class="step--5">Fin</div>
             </div>
             <form class="form form-active">
-            <div class="form--header-container">
-                <h1 class="form--header-title">
-                    Informations personnelles
-                </h1>
-        
-                <p class="form--header-text">
-                    Dites-nous en plus sur vous.
-                </p>
-            </div>
-            <input type="text" placeholder="Nom" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Nom de votre societé"/>
-            <button class="form__btn" id="btn-1">Suivant</button>
+                <div class="form--header-container">
+                    <h1 class="form--header-title">
+                        Connaissances numériques
+                    </h1>
+                    <p class="form--header-text">
+                        Estimez votre niveau d’autonomie numérique en quelques questions.
+                    </p>
+                </div>
+                <button class="form__btn" id="btn-1">Commencer</button>
             </form>
             <form class="form">
             <div class="form--header-container">
                 <h1 class="form--header-title">
-                Company Info
+                    Information d'entreprise
                 </h1>
         
                 <p class="form--header-text">
-                Tell us more about your company.
+                    Dites-nous en plus sur votre entreprise.
                 </p>
             </div>
-        
-            <input type="text" placeholder="Company Name" />
-            <input type="text" placeholder="Job title" />
-            <input type="text" placeholder="Location" />
+            <input type="text" placeholder="Nom de votre societé"/>
+            <input type="text" placeholder="Fonction" />
+            <input type="text" placeholder="Localité" />
             <button class="form__btn" id="btn-2-prev">Précédent</button>
             <button class="form__btn" id="btn-2-next">Suivant</button>
             </form>
             <form class="form">
-            <div class="form--header-container">
-                <h1 class="form--header-title">
-                Social account
-                </h1>
-        
-                <p class="form--header-text">
-                Tell us more about your social account.
-                </p>
-            </div>
-            <input type="text" placeholder="Linkedin" />
-            <input type="text" placeholder="Twitter" />
-            <input type="text" placeholder="Github" />
-            <button class="form__btn" id="btn-3">Submit</button>
-            </form>
+                <div class="form--header-container">
+                  <h1 class="form--header-title">
+                    Utilisez-vous internet pour chercher des informations ?
+                  </h1>
+            
+                  <p class="form--header-text">
+
+                  </p>
+                </div>
+                <button class="form__btn" >Oui</button>
+                <button class="form__btn" >Non</button>
+                <button class="form__btn" id="btn-2-next">Suivant</button>
+              </form>
+              <form class="form">
+                <div class="form--header-container">
+                  <h1 class="form--header-title">
+                    Réalisez-vous des démarches en ligne seul(e) ?
+                  </h1>
+            
+                  <p class="form--header-text">
+
+                  </p>
+                </div>
+                <button class="form__btn" >Oui</button>
+                <button class="form__btn" >Non</button>
+                <button class="form__btn" id="btn-2-next">Suivant</button>
+              </form>
+              <form class="form">
+                <div class="form--header-container">
+                  <h1 class="form--header-title">
+                    Utilisez-vous une smartphone ou une tablettes dans votre quotidien ?
+                  </h1>
+            
+                  <p class="form--header-text">
+
+                  </p>
+                </div>
+                <button class="form__btn" >Oui</button>
+                <button class="form__btn" >Non</button>
+                <!--<button class="form__btn" id="btn-3">Submit</button>-->
+              </form>
+
+
+
             <div class="form--message"></div>
         </main>
+
+
 </body>
 </html>
