@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"defer></script>
+
+    <title>Questionnaire de connaissances numériques</title>
+
+</head>
+<body>
+    <main>
+        <div class="stepper">
+            <div class="step--1 step-active">Début</div><!--mise en forme-->
+            <div class="step--2">Étape 1</div><!--info personnel-->
+            <div class="step--3">Étape 2</div><!--info société-->
+            <div class="step--4">Étape 3</div><!--question 1 -->
+            <div class="step--5">Étape 4</div><!--question 2 -->
+            <div class="step--6">Étape 5</div><!--question 3 -->
+            <div class="step--7">Étape 6</div><!--question 4 -->
+            <div class="step--8">Fin</div>
+        </div>
+        <!--mise en forme-->
+                    <form class="form form-active">
+                        <div class="form--header-container">
+                            <div class="row center">
+                                <div class="col-md-12">
+                                    <h1 class="form--header-title">
+                                        Connaissances numériques
+                                    </h1>
+        
+                                    <p class="form--header-text" style="font-size: small;">
+                                        Estimez votre niveau d’autonomie numérique en quelques questions.
+                                    </p>
+                                    <button class="form__btn" id="btn-1">Suivant</button>
+                                </div> 
+                            </div>
+                        </div>
+                    </form>
+        <!--info personnel-->
+        <form class="form">
+            <div class="container">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <div class="form--header-container">
+                            <h1 class="form--header-title">
+                                Informations personnelles
+                            </h1>
+        
+                            <p class="form--header-text">
+                                Dites-nous en plus sur vous.
+                            </p>
+                        </div>
+                        <input type="text" placeholder="Nom" />
+                        <input type="text" placeholder="Prénom" />
+                        <input type="text" placeholder="Adresse Mail" />
+                        <button class="form__btn" id="btn-1">Suivant</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!--info société-->
+        <form class="form">
+            <div class="container">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <div class="form--header-container">
+                            <h1 class="form--header-title">
+                                Information d'entreprise
+                            </h1>
+        
+                            <p class="form--header-text">
+                                Dites-nous en plus sur votre entreprise.
+                            </p>
+                        </div>
+                        <input type="text" placeholder="Nom de la societé" />
+                        <input type="text" placeholder="Fonction" />
+                        <input type="text" placeholder="Emplacement" />
+                        <button class="form__btn" id="btn-2-prev">Précédent</button>
+                        <button class="form__btn" id="btn-2-next">Suivant</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!--question 1 -->
+        <form class="form">
+            <div class="container">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <div class="form--header-container">
+                            <h1 class="form--header-title">
+                                Question 1
+                            </h1>
+        
+                            <p class="form--header-text">
+                                Réalisez-vous des démarches en ligne seul(e) ?
+                            </p>
+                        </div>
+                        <div class="quiz-options">
+                            <div data-value="70" class="quiz-option" style="order: 0;">
+                                <button class="form__btn" id="réponseY">Oui</button>
+                            </div>
+                            <div data-value="70" class="quiz-option" style="order: 1;">
+                                <button class="form__btn" id="réponseN">Non</button>
+                            </div>
+                        </div>
+                        <button class="form__btn" id="btn-2-prev">Précédent</button>
+                        <button class="form__btn" id="btn-2-next">Suivant</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!--question 2 -->
+        <form class="form">
+            <div class="container">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <div class="form--header-container">
+                            <h1 class="form--header-title">
+                                Question 2
+                            </h1>
+                    
+                            <p class="form--header-text">
+                                Utilisez-vous régulièrement votre adresse email pour communiquer ?
+                            </p>
+                        </div>
+                        <div class="quiz-options">
+                            <div data-value="70" class="quiz-option" style="order: 0;">
+                                <button class="form__btn" id="réponseY">Oui</button>
+                            </div>
+                            <div data-value="70" class="quiz-option" style="order: 1;">
+                                <button class="form__btn" id="réponseN">Non</button>
+                            </div>
+                        </div>
+                        <button class="form__btn" id="btn-2-prev">Précédent</button>
+                        <button class="form__btn" id="btn-2-next">Suivant</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!--question 3 -->
+        <form class="form">
+            <div class="container">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <div class="form--header-container">
+                            <h1 class="form--header-title">
+                                Question 3
+                            </h1>
+                            
+                            <p class="form--header-text">
+                             Utilisez-vous internet pour chercher des informations ?
+                            </p>
+                        </div>
+                        <div class="quiz-options">
+                            <div data-value="70" class="quiz-option" style="order: 0;">
+                                <button class="form__btn" id="réponseY">Oui</button>
+                            </div>
+                            <div data-value="70" class="quiz-option" style="order: 1;">
+                                <button class="form__btn" id="réponseN">Non</button>
+                            </div>
+                        </div>
+                        <button class="form__btn" id="btn-2-prev">Précédent</button>
+                        <button class="form__btn" id="btn-2-next">Suivant</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!--question 4 -->
+        <form class="form">
+            <div class="container">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <div class="form--header-container">
+                            <h1 class="form--header-title">
+                                Question 4
+                            </h1>
+                                    
+                            <p class="form--header-text">
+                                Utilisez vous professionnellement une smartphone ou une tablette ?
+                            </p>
+                        </div>
+                        <div class="quiz-options">
+                            <div data-value="70" class="quiz-option" style="order: 0;">
+                                <button class="form__btn" id="réponseY">Oui</button>
+                            </div>
+                            <div data-value="70" class="quiz-option" style="order: 1;">
+                                <button class="form__btn" id="réponseN">Non</button>
+                            </div>
+                        </div>
+                        <button class="form__btn" id="btn-3">Valider</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
