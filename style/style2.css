@@ -69,6 +69,22 @@ ul li {
   background-color: #3857ff;
 }
 
+.styleButtoncontact {
+  display: block;
+  margin: auto;
+}
+
+input.styleButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  display: block;
+  margin: auto;
+}
+
 .styled:hover {
   background-color: #ffffff;
 }
@@ -84,25 +100,49 @@ ul li {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 4px;
-  margin: 10px 10px 10px 10px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin: 20px 10px 50px 10px;
 }
 
 .sous-titre {
   border: 1px solid #3857ff;
-  padding: 15px;
+  padding: 70px 70px;
+  margin-bottom: 150px;
 }
 
 .sous-titre1 {
   background-color: #3857ff;
-  padding: 15px;
   color: #ffffff;
   border: 1px solid #3857ff;
+  padding: 70px;
 }
 
 .sous-titre3 {
   border: 1px solid #3857ff;
   padding: 50px 50px 50px 50px;
+}
+
+h4 {
+  margin: -30px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  margin: 50px -35px;
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
 }
 /*# sourceMappingURL=style2.css.map */
