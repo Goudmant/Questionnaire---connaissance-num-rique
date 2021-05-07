@@ -20,37 +20,16 @@ body {
   color: #3857ff;
 }
 
-header {
+header.header {
   background-color: #ffffff;
   color: #3857ff;
+  text-align: left;
+  vertical-align: center;
 }
 
 footer {
   background-color: #ffffff;
   color: #3857ff;
-}
-
-main {
-  height: 100vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-}
-
-.header {
-  display: block;
 }
 
 .hero {
@@ -63,12 +42,13 @@ main {
 
 img.logo {
   height: 20px;
-  width: auto;
+  width: 20px;
+  vertical-align: middle;
 }
 
 ul {
   list-style: none;
-  margin: 25px;
+  margin: 0px 25px;
 }
 
 ul li {
@@ -78,7 +58,7 @@ ul li {
 .styleButton {
   border: 2px solid #ffffff;
   line-height: 2;
-  padding: 0px 10px;
+  padding: 0px 20px 0px 20px;
   font-size: 1rem;
   text-align: center;
   -webkit-box-align: center;
@@ -100,22 +80,22 @@ ul li {
 .container {
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
-  gap: 10px;
-  -ms-grid-columns: (minmax(200px, auto))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-  grid-auto-rows: minmax(100px, auto);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 4px;
+  margin: 10px 10px 10px 10px;
 }
 
 .sous-titre {
   border: 1px solid #3857ff;
-  margin: 1px;
   padding: 15px;
 }
 
 .sous-titre1 {
   background-color: #3857ff;
-  margin: 3px;
   padding: 15px;
   color: #ffffff;
   border: 1px solid #3857ff;
@@ -123,7 +103,6 @@ ul li {
 
 .sous-titre3 {
   border: 1px solid #3857ff;
-  margin: 50px 50px 50px 50px;
-  padding: 0px 50px 0px 50px;
+  padding: 50px 50px 50px 50px;
 }
 /*# sourceMappingURL=style2.css.map */
